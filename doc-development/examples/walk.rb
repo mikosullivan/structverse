@@ -12,7 +12,7 @@ hsh = {
         [ "Bottom", "Flute" ]
       ]
   }
-}
+};
 
 Structverse.walk(hsh) do |struct|
   puts struct.class
