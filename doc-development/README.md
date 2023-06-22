@@ -5,33 +5,7 @@ array. Call `Structverse.walk`, passing in the hash or array. The `walk` method
 will return each hash and array in the structure. Only hashes as arrays are
 returned.
 
-```ruby
-#!/usr/bin/ruby -w
-require 'structverse'
-
-hsh = {
-  "Puck": true,
-  
-  "Oberon": {
-    "Titania": [
-        "Peaseblossom",
-        "Mustardseed",   
-        { "Mote": true },
-        [ "Bottom", "Flute" ]
-      ]
-  }
-}
-
-Structverse.walk(hsh) do |struct|
-  puts struct.class
-end
-
-# => Hash
-# => Hash
-# => Array
-# => Hash
-# => Array
-```
+[import]: {"path": "walk.rb"}
 
 ## Installation
 
